@@ -73,7 +73,7 @@ def heterogeneity(df: pd.DataFrame) -> pd.DataFrame:
         for val, g in src.groupby(col):
             t, c = g[g.arm == "mens"].visit, g[g.arm == "control"].visit
             r = mean_diff(t, c)
-            rows.append(dict(признак=label, значение=str(val), клиентов=len(g) // 3 * 2,
+            rows.append(dict(признак=label, значение=str(val), клиентов=len(t) + len(c),
                              uplift_пп=round(r["effect"] * 100, 1),
                              ci95=f"[{r['ci95'][0] * 100:.1f}; {r['ci95'][1] * 100:.1f}]"))
     return pd.DataFrame(rows)
