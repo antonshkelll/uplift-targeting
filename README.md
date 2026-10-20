@@ -1,5 +1,7 @@
 # Uplift-моделирование: кому отправлять предложение
 
+[![CI](https://github.com/antonshkelll/uplift-targeting/actions/workflows/ci.yml/badge.svg)](https://github.com/antonshkelll/uplift-targeting/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/Python-3.12-3776AB) ![License](https://img.shields.io/badge/license-MIT-lightgrey)
+
 Анализ реального рандомизированного эксперимента на 64 000 клиентах: кому рассылка действительно меняет поведение, можно ли на этом заработать и когда персонализация не нужна.
 
 Задача та же, что у банков с кешбэк-офферами и push-кампаниями: контакт стоит денег, часть клиентов купит и без него, а часть не купит в любом случае. Платить имеет смысл только за тех, на кого предложение влияет.
@@ -114,3 +116,10 @@ src/run.py                весь анализ
 tests/                    тесты метрик и моделей
 reports/                  графики, results.json, heterogeneity.csv
 ```
+
+## Связанные проекты
+
+- [SplitLab](https://github.com/antonshkelll/splitlab-bnpl-analytics) — A/B-тест с CUPED и DiD
+- [DropHunter](https://github.com/antonshkelll/drophunter-antifraud) — модель с порогом по деньгам
+
+Все проекты — в [профиле](https://github.com/antonshkelll).
