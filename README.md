@@ -95,8 +95,10 @@ cd uplift-targeting
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python src/run.py          # ~1 минута; графики в reports/figures, цифры в reports/results.json
-pytest -q                  # тесты метрик
+# ~1 минута; графики в reports/figures, цифры в reports/results.json
+python src/run.py
+# тесты метрик
+pytest -q
 ```
 
 Windows (PowerShell):
@@ -138,3 +140,4 @@ reports/                  графики, results.json, heterogeneity.csv
 - [DropHunter](https://github.com/antonshkelll/drophunter-antifraud): модель с порогом по деньгам
 
 Все проекты собраны в [профиле](https://github.com/antonshkelll).
+
